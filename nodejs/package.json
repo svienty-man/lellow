@@ -1,0 +1,16 @@
+{
+  "name": "polls-swagger",
+  "version": "1.0.0",
+  "description": "Polls is a simple API allowing consumers to view polls and vote in them.",
+  "main": "index.js",
+  "keywords": [
+    "swagger"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "connect": "^3.2.0",
+    "js-yaml": "^3.3.0",
+    "swagger-tools": "0.9.*"
+  }
+}

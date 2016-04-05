@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SortViewController" customModule="lellow" customModuleProvider="target">
+            <connections>
+                <outlet property="sortByArrival" destination="RgZ-T1-zRq" id="hiW-cw-oOc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="center" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vuv-VL-COE">
+                    <rect key="frame" x="37" y="16" width="195" height="127"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sort By" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEb-z6-MaQ">
+                            <rect key="frame" x="69" y="0.0" width="57" height="21"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Select an option to sort location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3W-3M-dHg">
+                            <rect key="frame" x="0.0" y="21" width="195" height="16"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="212-2M-cce">
+                            <rect key="frame" x="50" y="37" width="95" height="30"/>
+                            <state key="normal" title="Sort By Name"/>
+                            <connections>
+                                <action selector="sortByName:" destination="-1" eventType="touchUpInside" id="JbV-c4-E84"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgZ-T1-zRq">
+                            <rect key="frame" x="29" y="67" width="137" height="30"/>
+                            <state key="normal" title="Sort By Arrival Time"/>
+                            <connections>
+                                <action selector="SortByArrTime:" destination="-1" eventType="touchUpInside" id="8HE-2j-KCv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdR-a4-uvj">
+                            <rect key="frame" x="40" y="97" width="115" height="30"/>
+                            <state key="normal" title="Sort By Distance"/>
+                            <connections>
+                                <action selector="sortByDistance:" destination="-1" eventType="touchUpInside" id="pIG-Op-KyS"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.72566575064301875" blue="0.17675784578380538" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="203" id="Exk-Wf-hTI"/>
+                        <constraint firstAttribute="height" constant="127" id="z1K-hu-SE7"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Exk-Wf-hTI"/>
+                            <exclude reference="z1K-hu-SE7"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact-widthClass=compact" alignment="center" axis="vertical">
+                        <mask key="constraints">
+                            <include reference="Exk-Wf-hTI"/>
+                            <include reference="z1K-hu-SE7"/>
+                        </mask>
+                    </variation>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.72566575060000005" blue="0.17675784580000001" alpha="1" colorSpace="calibratedRGB"/>
+            <rect key="contentStretch" x="0.0" y="0.0" width="0.90000000000000002" height="1"/>
+            <constraints>
+                <constraint firstItem="Vuv-VL-COE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FQB-c8-9nP"/>
+                <constraint firstItem="Vuv-VL-COE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="dGm-kS-s5n"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="FQB-c8-9nP"/>
+                    <exclude reference="dGm-kS-s5n"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="FQB-c8-9nP"/>
+                    <include reference="dGm-kS-s5n"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="90" y="-154.5"/>
+        </view>
+    </objects>
+</document>
