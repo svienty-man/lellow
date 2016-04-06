@@ -1,0 +1,36 @@
+---
+swagger: "2.0"
+info:
+  description: "Polls is a simple API allowing consumers to view polls and vote in\
+    \ them."
+  version: "1.0.0"
+  title: "Polls Swagger"
+host: "polls.apiblueprint.org"
+schemes:
+- "http"
+paths:
+  /questions:
+    get:
+      summary: "List all questions"
+      operationId: "questionsGET"
+      parameters: []
+      responses:
+        200:
+          description: "List"
+          examples:
+            application/json:
+            - question: "Favourite programming language?"
+              published_at: "2015-08-05T08:40:51.620Z"
+              choices:
+              - choice: "Swift"
+                votes: 2048
+              - choice: "Python"
+                votes: 1024
+              - choice: "Objective-C"
+                votes: 512
+              - choice: "Ruby"
+                votes: 256
+      x-swagger-router-controller: "Default"
+    x-description: ""
+    x-summary: "Questions Collection"
+definitions: {}
