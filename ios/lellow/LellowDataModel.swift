@@ -9,7 +9,6 @@
 import Foundation
 import CoreLocation
 
-// let dataURL = "http://localsearch.azurewebsites.net/api/Locations"
 let dataURL = "http://localhost:8080/questions"
 
 enum sortOrder {
