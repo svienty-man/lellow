@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62C380261CE68054003FD891 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 62C380251CE68054003FD891 /* README.md */; };
 		6A3802851CB217FF004C2AD6 /* LellowDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3802821CB217FE004C2AD6 /* LellowDataModel.swift */; };
 		6A3802861CB217FF004C2AD6 /* SortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3802831CB217FF004C2AD6 /* SortViewController.swift */; };
 		6A3802871CB217FF004C2AD6 /* SortViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A3802841CB217FF004C2AD6 /* SortViewController.xib */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62C380251CE68054003FD891 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6A3802821CB217FE004C2AD6 /* LellowDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LellowDataModel.swift; sourceTree = "<group>"; };
 		6A3802831CB217FF004C2AD6 /* SortViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortViewController.swift; sourceTree = "<group>"; };
 		6A3802841CB217FF004C2AD6 /* SortViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SortViewController.xib; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		6AE6AC741CB0507200B87656 = {
 			isa = PBXGroup;
 			children = (
+				62C380251CE68054003FD891 /* README.md */,
 				6AE6AC7F1CB0507200B87656 /* lellow */,
 				6AD0F0C91CB30E6F00F3C727 /* images */,
 				6AD0F0C41CB3051800F3C727 /* GPX */,
@@ -304,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62C380261CE68054003FD891 /* README.md in Sources */,
 				6A3802861CB217FF004C2AD6 /* SortViewController.swift in Sources */,
 				6AE6AC851CB0507200B87656 /* DetailViewController.swift in Sources */,
 				6AE6AC831CB0507200B87656 /* MasterViewController.swift in Sources */,
