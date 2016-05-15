@@ -1,8 +1,48 @@
 var express = require('express');
 var router = express.Router();
+var MongoClient = require('mongodb').MongoClient;
+var retjson;
+
+console.log("Questions script is called!");
+
+// Connection URL
+var url = 'mongodb://localhost:27017/test';
+
+function retrieveData() {
+  console.log("Retrieve Data is called!");
+
+  MongoClient.connect(url, function(err, db) {
+  console.log("Connected succesfully to mongo db server");
+
+  console.log("Error return " + err);
+
+  db.listCollections(function(err, collections){
+        if (err) {
+            throw err;
+        } else {
+            console.log("List Collections Returs: " + collections);
+        }
+  });
+ 
+  var contentCollection = db.collection('locations');
+  contentCollection.find({}).toArray(function(err, result) {
+        if (err) {
+            throw err;
+        } else {
+          console.log("We finally got here anyways!");
+          console.log("Result Returns: " + result);
+          console.dir(result);
+          db.close();
+        }
+    });        
+  });
+}
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
+
+console.log("Questions route is started!");
+retrieveData();
 
 var body, type, jresp;
 

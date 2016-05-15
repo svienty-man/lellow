@@ -22,3 +22,7 @@ npm install
 DEBUG=lellow:* PORT=8080 npm start
 
 Then run the app to read the data source and put up a list of "Lellow" things to map out.
+
+Last but not least, if you need to run the mongodb
+
+mongod --dbpath ~/Data/db
